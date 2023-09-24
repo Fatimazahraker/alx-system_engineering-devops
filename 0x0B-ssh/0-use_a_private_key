@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# use SSH to connect to server wiht user UBUNTU throw RSA key
+ssh -i ~/.ssh/school ubuntu@3.85.148.98
