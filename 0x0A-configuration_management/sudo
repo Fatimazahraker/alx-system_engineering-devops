@@ -1,0 +1,31 @@
+
+tice: Compiled catalog for ubuntu-focal in environment production in 0.02 seconds
+/usr/lib/ruby/vendor_ruby/puppet/util.rb:461: warning: URI.escape is obsolete
+/usr/lib/ruby/vendor_ruby/puppet/util.rb:461: warning: URI.escape is obsolete
+/usr/lib/ruby/vendor_ruby/puppet/util.rb:315: warning: deprecated Object#=~ is called on Puppet::Transaction::Report; it always returns nil
+Notice: /Stage[main]/Main/File[/tmp/school]/owner: owner changed 'vagrant' to 'www-data'
+Notice: /Stage[main]/Main/File[/tmp/school]/group: group changed 'vagrant' to 'www-data'
+/usr/lib/ruby/vendor_ruby/puppet/file_system/uniquefile.rb:126: warning: $SAFE will become a normal global variable in Ruby 3.0
+Notice: Applied catalog in 0.02 seconds
+/usr/lib/ruby/vendor_ruby/puppet/file_system/uniquefile.rb:126: warning: $SAFE will become a normal global variable in Ruby 3.0
+/usr/lib/ruby/vendor_ruby/puppet/util.rb:315: warning: deprecated Object#=~ is called on Puppet::Transaction::Report; it always returns nil
+/usr/lib/ruby/vendor_ruby/puppet/file_system/uniquefile.rb:126: warning: $SAFE will become a normal global variable in Ruby 3.0
+/usr/lib/ruby/vendor_ruby/puppet/file_system/uniquefile.rb:126: warning: $SAFE will become a normal global variable in Ruby 3.0
+vagrant@ubuntu-focal:~/alx-system_engineering-devops/0x0A-configuration_management$
+vagrant@ubuntu-focal:~/alx-system_engineering-devops/0x0A-configuration_management$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
