@@ -11,4 +11,4 @@ sudo sed -i '/^}$/i \ \n\tlocation \/redirect_me {return 301 https:\/\/www.youtu
 sudo sed -i '/^}$/i \ \n\tlocation @404 {return 404 "Ceci n'\''est pas une page\\n";}' /etc/nginx/sites-available/default
 sudo sed -i 's/=404/@404/g' /etc/nginx/sites-available/default
 sudo sed -i "0,/location \/ {/s/location \/ {/&\n\t\t$custom_header;/" /etc/nginx/sites-available/default
-sudo service nginx start
+sudo service nginx restart
