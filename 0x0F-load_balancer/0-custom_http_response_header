@@ -3,10 +3,12 @@
 
 sudo apt-get  -y update
 sudo apt-get install nginx -y
+
+custom_header="add_header X-Served-By \$hostname"
 sudo ufw allow 'Nginx HTTP'
 sudo sh -c "echo 'Hello World!' > /var/www/html/index.nginx-debian.html"
 sudo sed -i '/^}$/i \ \n\tlocation \/redirect_me {return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;}' /etc/nginx/sites-available/default
 sudo sed -i '/^}$/i \ \n\tlocation @404 {return 404 "Ceci n'\''est pas une page\\n";}' /etc/nginx/sites-available/default
 sudo sed -i 's/=404/@404/g' /etc/nginx/sites-available/default
-sudo sed -i '/listen 80 default_server/i add_header X-Served-By $HOSTNAME;' /etc/nginx/sites-available/default
+sudo sed -i "0,/location \/ {/s/location \/ {/&\n\t\t$custom_header;/" /etc/nginx/sites-available/default
 sudo service nginx start
