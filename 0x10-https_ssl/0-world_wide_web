@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This script displays information about subdomains
+
+query_dns() {
+   result=$(dig "$2.$1" +short)
+   echo "$2 $result" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+   
+}
+
+if [ "$#" == 1 ]; then
+   # Display information for default subdomains
+   query_dns "$1" "www"
+   query_dns "$1" "lb-01"
+   query_dns "$1" "web-01"
+   query_dns "$1" "web-02"
+else
+   # Display information for the specified subdomain
+   query_dns "$1" "$2"
+fi
+
