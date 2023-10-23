@@ -15,7 +15,7 @@ def todo_employee(id):
     total_tasks = len(todo_data)
     done_tasks = sum(1 for task in todo_data if task['completed'])
 
-    print(f'Employee {name} is done with tasks ({done_tasks}/{total_tasks}):')
+    print(f'Employee {name} is done with tasks({done_tasks}/{total_tasks}):')
     for task in todo_data:
         if task['completed']:
             print(f'\t {task["title"]}')
